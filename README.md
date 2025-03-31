@@ -17,6 +17,10 @@
 
 O BeeOnTime é um aplicação web moderna e responsiva para o controle de ponto eletrônico dos colaboradores de uma empresa. O sistema permitirá o registro e gerenciamento de horas trabalhadas, horas extras, férias, folgas, justificativas e ajustes de jornada. A plataforma contará com funcionalidades como marcação de ponto, espelho de ponto, banco de horas, relatórios detalhados e envio de notificações.
 
+A versão mais recente do projeto se encontra na branch main de cada repositório:
+- [Front-end](https://github.com/SkyFlyTeam/BeeOnTime-frontend/tree/main)
+- [Back-end](https://github.com/SkyFlyTeam/BeeOnTime-backend/tree/main)
+
 <br> 
 
 <span id="entregas">
