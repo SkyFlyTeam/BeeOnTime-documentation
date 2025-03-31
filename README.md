@@ -23,7 +23,7 @@ O BeeOnTime é um aplicação web moderna e responsiva para o controle de ponto 
 
 # 🏁 Entregas de Sprints
 
-Cada entrega foi realizada a partir da criação de uma **tag** em cada repositório (web, back, nlp...), além da criação de uma branch neste repositório com um relatório completo de tudo o que foi desenvolvido naquela sprint. Observe a relação a seguir:
+Cada entrega foi realizada a partir da criação de uma **tag** em cada repositório (front e back), além da criação de uma branch neste repositório com um relatório completo de tudo o que foi desenvolvido naquela sprint.
 | Sprint | Previsão de entrega | Status | Histórico |
 |:--:|:----------:|:-------------------|:-------------------------------------------------:|
 | 01 | 10/03/2025 a 30/03/2025 | ✔️ Concluída | [Ver relatório](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/sprint-01/README.md) |
@@ -92,9 +92,11 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 <span id="links">
 
 # 🔗 Links úteis
-
-- [Modelo lógico do Banco de Dados](https://drive.google.com/file/d/1sXmtWTzleYs18p3dwqE7RUNxmmhGuBpb/view?usp=sharing)
-- [Backlog da 1°Sprint]()
+- [Backlog da 1°Sprint](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/2ac530603592cfca96fab6b2286086dd389601e6/Documenta%C3%A7%C3%B5es/Backlog%201%C2%B0%20Sprint.pdf)
+- [Modelo lógico do Banco de Dados](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/2ac530603592cfca96fab6b2286086dd389601e6/Documenta%C3%A7%C3%B5es/Modelo%20l%C3%B3gico%20do%20Banco%20de%20Dados.svg)
+- [Fluxo de trabalho no Github](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/2ac530603592cfca96fab6b2286086dd389601e6/Documenta%C3%A7%C3%B5es/Fluxo%20de%20Trabalho%20no%20GitHub.pdf)
+- [Regras de Permanência no Grupo SkyFly](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/2ac530603592cfca96fab6b2286086dd389601e6/Documenta%C3%A7%C3%B5es/Regras%20de%20Perman%C3%AAncia%20no%20Grupo.pdf)
+- [DoR e DoD](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/2ac530603592cfca96fab6b2286086dd389601e6/Documenta%C3%A7%C3%B5es/DoR%20e%20DoD.pdf)
 <br>
 
 
