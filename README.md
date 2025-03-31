@@ -1,105 +1,73 @@
-![Banner BeeOnTime](https://github.com/user-attachments/assets/b56e3060-73c1-40db-8302-7d63664b3882)
+![1° Sprint](https://github.com/user-attachments/assets/046b1b08-9234-4650-8107-80ab3cec102c)
 
 <br>
 
 <p align="center">
-    <a href="#sobre"> Sobre o projeto</a>  |  
-    <a href="#entregas"> Entregas </a> |
-    <a href="#tecnologias">Tecnologias utilizadas </a>  |  
-    <a href="#backlog"> Backlog do produto </a>  |  
-    <a href="#autores"> Equipe </a> 
+    <a href="#objetivos"> Objetivos da Sprint </a> &nbsp |&nbsp &nbsp
+    <a href="#entregas"> Entregas </a> &nbsp |&nbsp &nbsp
+    <a href="#metricas"> Métricas do Time </a>  &nbsp |&nbsp &nbsp  
+    <a href="#links"> Links úteis </a>
 </p>
 
-<span id="sobre">
+No início do desenvolvimento da aplicação de controle de ponto eletrônico, a primeira sprint focou no MVP (Produto Mínimo Viável), priorizando as funcionalidades mais essenciais. A equipe concentrou seus esforços na marcação de ponto, que é a base do sistema. Entre as funcionalidades desenvolvidas, destacam-se o cadastro da empresa e setores, cadastro de colaboradores e jornadas, registro de ponto, histórico de pontos, solicitações de ajustes de ponto e cálculo automático de horas extras.
 
-# 📑 Sobre o projeto
+<span id="objetivos">
 
-O BeeOnTime é um aplicação web moderna e responsiva para o controle de ponto eletrônico dos colaboradores de uma empresa. O sistema permitirá o registro e gerenciamento de horas trabalhadas, horas extras, férias, folgas, justificativas e ajustes de jornada. A plataforma contará com funcionalidades como marcação de ponto, espelho de ponto, banco de horas, relatórios detalhados e envio de notificações.
+# 🎯 Objetivos da Sprint
+Os requisitos funcionais atendidos nesta sprint foram:
+
+- ✔️ RF 01: Cadastro da empresa
+- ✔️ RF 02: Cadastro de colaboradores
+- ✔️ RF 03: Registro e ajustes no ponto
+- ✔️ RF 04: Cálculo de horas extras e banco de horas
 
 <br> 
 
 <span id="entregas">
 
-# 🏁 Entregas de Sprints
+# 📲 Entregas
+Durante esta sprint, o time entregou artefatos SCRUM validados, como o Backlog do Produto, o Backlog das Sprints e as User Stories, com a participação direta do P.O. e comunicação constante com o cliente. Para entender e alinhar as expectativas do cliente, foi criado um protótipo inicial no Figma, que ajudou a definir a identidade visual e o design do sistema. Esse protótipo foi validado com o cliente e traduzido em uma aplicação React, integrando as funcionalidades acordadas para esta sprint.
 
-Cada entrega foi realizada a partir da criação de uma **tag** em cada repositório (web, back, nlp...), além da criação de uma branch neste repositório com um relatório completo de tudo o que foi desenvolvido naquela sprint. Observe a relação a seguir:
-| Sprint | Previsão de entrega | Status | Histórico |
-|:--:|:----------:|:-------------------|:-------------------------------------------------:|
-| 01 | 10/03/2025 a 30/03/2025 | ⌛ Em andamento |  |
-| 02 | 07/04/2025 a 27/04/2025 | ❌ Aguardando ínicio |  |
-| 03 | 05/05/2025 a 28/05/2025 | ❌ Aguardando ínicio |  |
+### RF 01: Cadastro da Empresa
+O cadastro da empresa ocorre no ínicio, com o preenchimento de informações essenciais como nome, razão social, CNPJ e CEP, o que permite preencher automaticamente o endereço da empresa. No segundo passo, é possível cadastrar todos os setores da empresa, estruturando a organização hierárquica.
+
+### RF 02: Cadastro de Colaboradores
+O sistema permite o cadastro de novos colaboradores, onde cada um recebe um e-mail de primeiro acesso após a conclusão do cadastro. As informações incluem nome, CPF, e-mail, data de nascimento, código de registro, tipo de contrato (CLT ou Estágio), data de contratação, cargo, nível de acesso e o setor ao qual o colaborador pertence.
+
+No segundo passo, a jornada de trabalho do colaborador pode ser configurada, especificando carga horária e dias trabalhados. Caso a jornada seja flexível, não é necessário definir os horários de entrada, saída e almoço, mas, caso contrário, essas informações devem ser detalhadas.
+
+### RF 03: Registro e Ajustes no Ponto
+Funcionários e gestores podem registrar os pontos de trabalho ao longo do dia, incluindo horários de entrada, início de almoço, fim de almoço e saída. Caso ocorra algum erro ou esquecimento ao bater o ponto, é possível solicitar um ajuste, acompanhado de uma justificativa. Gestores ou administradores têm a capacidade de aprovar ou rejeitar essas solicitações de ajuste. Se o ajuste for aceito, o ponto é alterado automaticamente. Caso contrário, o gestor pode enviar uma devolutiva explicando a recusa.
+
+### RF 04: Horas Extras e Banco de Horas
+As horas extras são automaticamente calculadas pelo sistema. Na tela de "Meus Pontos", o colaborador pode visualizar a quantidade de horas trabalhadas, incluindo horas extras. O sistema também registra todos os pontos batidos, garantindo transparência e controle sobre o tempo trabalhado, além de facilitar a gestão de horas extras e banco de horas.
 
 <br />
 
-<span id="tecnologias">
+<span id="metricas">
 
-# 🛠️ Tecnologias Utilizadas
+# 📈 Métricas do Time
+A sprint foi composta por 9 user stories e 27 subtasks. Embora o gráfico de burndown mostre que o trabalho foi concentrado no final, a realidade é que o time começou a trabalhar antes da sprint, realizando atividades como a criação do mockup, definição de DoR e DoD, elaboração do Backlog da Sprint, e configuração das branches de backend e frontend.
 
-As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na construção do projeto:
+O gráfico de burndown mostra a evolução do trabalho ao longo da sprint. A linha horizontal representa o tempo, ou seja, as datas da sprint, enquanto a linha vertical indica os pontos de história que representam o esforço total planejado para a sprint. A linha cinza mostra a taxa de progresso ideal, indicando como o trabalho deveria ser realizado de maneira constante ao longo dos dias. Já a linha vermelha indica o trabalho realizado, que no gráfico reflete a conclusão das User Stories 100% finalizadas. O pico no gráfico ocorre quando as User Stories são concluídas, explicando a aparente concentração de trabalho no final da sprint. Na prática, a maior parte das subtasks já estava concluída antes das últimas entregas.
 
-![Typescript](https://img.shields.io/badge/TypeScript-20232A?style=for-the-badge&logo=typescript&logoColor=007ACC)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node%20js-20232A?style=for-the-badge&logo=nodedotjs&logoColor=339933)
-![Java](https://img.shields.io/badge/Java-20232A?style=for-the-badge&logo=openjdk&logoColor=23ED8B00)
-![Spring Boot](https://img.shields.io/badge/Spring-20232A?style=for-the-badge&logo=spring&logoColor=6DB33F)
-![Docker](https://img.shields.io/badge/docker-20232A?style=for-the-badge&logo=docker&logoColor=87CEEB)
-![MySQL](https://img.shields.io/badge/mysql-20232A?style=for-the-badge&logo=mysql&logoColor=4682B4)
-![MongoDB](https://img.shields.io/badge/MongoDB-20232A?style=for-the-badge&logo=mongodb&logoColor=234ea94b)
-![CSS3](https://img.shields.io/badge/css3-20232A?style=for-the-badge&logo=css3&logoColor=4682B4)
-![Figma](https://img.shields.io/badge/figma-20232A?style=for-the-badge&logo=figma&logoColor=800000)
-![Discord](https://img.shields.io/badge/Discord-20232A?style=for-the-badge&logo=discord&logoColor=61DAFB)
-![Jira](https://img.shields.io/badge/Jira-20232A?style=for-the-badge&logo=Jira&logoColor=4169E1)
+<br />
+    
+<div align="center">
+<img src="https://github.com/user-attachments/assets/d1f6e4c8-addd-42d2-b012-2d50f9801472" alt="Gráfico Burndown" />
+</div>
 
 <br>
 
-<span id="backlog">
+<span id="links">
 
-# 🎯 Backlog do Produto
+# 🔗 Links úteis
 
-
-![Frame 18](https://github.com/user-attachments/assets/55e5f8d5-7879-43e7-a328-b8ef0af93047)
-
-![Backlog Sprint (2)](https://github.com/user-attachments/assets/5cba9695-842c-4dc4-8bbf-4434a6185098)
-
+- Tags geradas em cada repositório que simbolizam o fim da 1ª sprint:
+  - [Repositório front-end]()
+  - [Repositório back-end]()
+- [Modelo lógico do Banco de Dados](https://drive.google.com/file/d/1sXmtWTzleYs18p3dwqE7RUNxmmhGuBpb/view?usp=sharing)
+- [Backlog da 1°Sprint]()
 <br>
 
 
-## DoR (Definition of Ready) 
-
-- **User Stories completas:** Todos os requisitos descritos em User Stories planejadas para caber na sprint.
-- **Tarefas detalhadas e atribuídas:** Cada User Story deve ter ao menos uma task detalhada e atribuída a um responsável.
-- **Critérios de aceitação definidos:** Cada User Story deve ter critérios de aceitação bem estabelecidos.
-- **Estimativas definidas:** Todas as User Stories devem ter uma estimativa de esforço/tamanho feita pelo time
-- **Wireframe/Mockup aprovados:** O cliente deve ter validado e aprovado os protótipos visuais.
-- **Modelo de dados finalizado:** Estrutura de dados completamente definida e documentada.
-- **Testes de aceitação definidos:** Incluindo testes sugeridos pelo cliente e testes de aceitação.
-- **Ambiente de desenvolvimento pronto:** O time deve ter acesso a todos os ambientes, ferramentas e permissões necessárias.
-
-<br>
-
-## DoD (Definition of Done) 
-
-- **Critérios de aceitação validados:** Todos os critérios de aceitação foram atendidos e verificados com testes apropriados.
-- **Execução de testes adequados:** Testes unitários, de integração e de aceitação foram realizados para garantir a estabilidade e funcionamento correto da aplicação.
-- **Código-fonte completo e padronizado:** O código está 100% implementado, refatorado e segue as boas práticas e padrões de qualidade definidos.
-- **Commits organizados e documentados:** Os commits seguem a nomenclatura acordada, são claros, segmentados e possuem histórico bem documentado.
-- **Guia de instalação detalhado:** A documentação de instalação é clara e completa, permitindo que qualquer usuário ou desenvolvedor configure e execute a aplicação sem dificuldades.
-- **Manual do usuário disponível:** Um manual foi criado para orientar o cliente sobre o funcionamento da aplicação.
-
-<br>
-
-<span id="autores">
-
-# 👥 Equipe
-
-
-|    Função     | Nome                                  |                                                                                                                                                      LinkedIn & GitHub                                                                                                                                                      |
-| :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|  Product Owner  | Sarah Montuani Batagioti               |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/sarahbatagioti/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/SarahBatagioti)   |
-| Scrum Master  | André Salerno |      [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/andresalerno/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/andresalerno)     |
-|  Team Member  | Brenno Rosa Lyrio de Oliveira               |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/brennolyrio/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/BrennoLyrio)   |
-| Team Member   | Eric Lourenço Mendes da Silva      |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)]() [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ericloumendes)        |
-|  Team Member  | Gustavo Muraoka Silva                 |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/gustavo-muraoka-4256721ba/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/gustavomuraoka)        |
-|  Team Member  | Karen de Cássia Gonçalves     |           [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/karen-cgonçalves) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/karengoncalves8)   |
-|  Team Member  | Guilherme dos Santos Benedito               |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-benedito/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/gui-benedito)   |
-|  Team Member  | Arthur Johannes Rodrigues Peres y Peres              |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/ajperes/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ajperes)   |
