@@ -6,6 +6,7 @@
     <a href="#objetivos"> Objetivos da Sprint </a> &nbsp |&nbsp &nbsp
     <a href="#entregas"> Entregas </a> &nbsp |&nbsp &nbsp
     <a href="#metricas"> Métricas do Time </a>  &nbsp |&nbsp &nbsp  
+    <a href="#backlog"> Backlog da Sprint </a>  &nbsp |&nbsp &nbsp  
     <a href="#links"> Links úteis </a>
 </p>
 
@@ -16,10 +17,10 @@ No início do desenvolvimento da aplicação de controle de ponto eletrônico, a
 # 🎯 Objetivos da Sprint
 Os requisitos funcionais atendidos nesta sprint foram:
 
-- ✔️ RF 01: Cadastro da empresa
-- ✔️ RF 02: Cadastro de colaboradores
-- ✔️ RF 03: Registro e ajustes no ponto
-- ✔️ RF 04: Cálculo de horas extras e banco de horas
+- ✔️ **RFN 01. Cadastro de Empresas:** <br /> O sistema permite cadastrar uma empresa juntamente com os setores que a compõem. <br /> <br /> 
+- ✔️ **RFN 02. Cadastro de Colaboradores:** <br />  O sistema permite cadastrar funcionários com diferentes níveis de permissão, vinculando-os à sua jornada de trabalho no momento do cadastro. <br /> <br /> 
+- ✔️ **RFN 03. egistro e Ajustes no Ponto:** <br />  O sistema permite registrar os horários de entrada, saída e intervalos dos funcionários, mantendo um histórico acessível ao colaborador. O sistema também permite realizar solicitações de ajustes de ponto. <br /> <br /> 
+- ✔️ **RFN 04. Horas Extras e Banco de Horas:** <br />  O sistema tem o registro automático das horas extras realizadas pelo colaborador. <br /> <br /> 
 
 <br> 
 
@@ -59,15 +60,31 @@ O gráfico de burndown mostra a evolução do trabalho ao longo da sprint. A lin
 
 <br>
 
+<span id="backlog">
+
+# 📃 Backlog da Sprint
+
+| **RFN** | **Rank** | **Prioridade** | **User Story** | **Estimativa** | **Sprint** | **Critérios de Aceitação** |
+|---------|----------|----------------|----------------|----------------|------------|---------------------------|
+| 01      | 1        | Alta           | Como administrador, quero cadastrar minha empresa, para configurar minhas informações e começar a gerenciar os pontos e colaboradores | 3              | 1          | - Na tela de Login, ao clicar no botão "É novo aqui? Cadastre sua empresa!", o usuário será direcionado para a tela de cadastro da empresa. <br> - A tela de cadastro deve conter os campos obrigatórios: Nome, Razão Social, CNPJ e CEP. <br> - Os campos CNPJ e CEP devem possuir máscaras de formatação. <br> - Não deve permitir o registro duas empresas com o mesmo CNPJ <br> - Após preencher os campos e salvar o cadastro, o usuário será redirecionado para a tela de definição de setores da empresa |
+| 02      | 2        | Alta           | Como administrador, quero cadastrar e gerenciar os setores da minha empresa para organizar as equipes de trabalho | 3              | 1          | - Após preencher as informações da empresa, o usuário será redirecionado para a tela de cadastro de setores <br> - Ao digitar o nome no campo e clicar no botão "+", um novo setor poderá ser adicionado <br> - Todos os setores cadastrados serão listados abaixo do formulário de inserção <br> - O sistema não permitirá o cadastro de setores com nomes duplicados. <br> - O sistema não permitirá a adição de setores com nome vazio |
+| 02      | 3        | Alta           | Como administrador, quero que meus cadastros tenham diferentes níveis de acesso, para garantir que cada usuário tenha permissões específicas conforme sua função | 21             | 1          | - O sistema deve permitir os níveis de acesso de administrador, gestor e funcionário <br> - O sistema deve bloquear usuários sem permissão de executar ações não autorizadas <br> - Apenas administradores podem alterar o nível de acesso do colaborador |
+| 02      | 4        | Alta           | Como administrador, quero registrar meus colaboradores com seus dados, para fazer o gerenciamento de suas informações e atividades dentro do sistema | 21             | 1          | - Apenas administradores podem registrar novos colaboradores <br> - O cadastro terá os campos de nome completo, data de nascimento, CPF, e-mail, número de registro, setor, data de admissão <br> - Os campos de data de nascimento, CPF, e-mail e data de admissão deverão ter máscaras de formatação <br> - O sistema não deve permitir duas contas com o mesmo CPF ou e-mail |
+| 02      | 5        | Média          | Como administrador, quero definir a jornada de trabalho, para que possa garantir o cumprimento das obrigações horários dos colaboradores | 5              | 1          | - Apenas administradores podem definir ou editar a jornada de trabalho dos colaboradores <br> - A definição da jornada trará os campos de horários de Entrada, Saída, Carga Horária e Dia da Semana <br> - Os horários de Entrada e Saída só serão mostrados se a opção for “Não” no campo de Horário Flexível? <br> - Todos os campos de horário deverão ter máscaras de formatação <br> - O Horário de Saída deve sempre ser maior que o Horário de Entrada, evitando registros inválidos |
+| 03      | 6        | Alta           | Como funcionário e gestor, quero registrar meus horários de entrada, saída e tempo de almoço, para que minha jornada de trabalho seja contabilizada corretamente | 8              | 1          | - Todos os níveis de acesso, exceto o administrador da empresa, registram ponto <br> - Na tela de início, serão exibidos apenas dois botões por vez, alternando conforme o status: Entrada ➙ Saída, Ida Almoço ➙ Volta Almoço <br> - Cada status pode ser acionado apenas uma vez por dia, ficando bloqueado após o uso. <br> - Na mesma tela, serão exibidos os parâmetros de horas trabalhadas diárias e mensais, incluindo informações sobre horas extras |
+| 04      | 7        | Alta           | Como funcionário e gestor, quero que minhas horas extras sejam automaticamente contabilizadas, para garantir o controle das horas trabalhadas a mais | 8              | 1          | - O sistema deverá automaticamente contabilizar as horas extras quando o tempo trabalhado passar da carga horária definida para aquele usuário <br> - Deverá ser indicado as horas diárias automáticas na tela inicial em “Carga diária” <br> - Deverá acumular as horas extras no card da tela inicial que indica o Banco de Horas do usuário |
+| 03      | 8        | Média          | Como funcionário e gestor, quero acessar meu histórico de pontos, para poder acompanhar e ter controle detalhado das horas trabalhadas | 3              | 1          | - Na tela de Meus pontos, será exibido todo o histórico de pontos marcado por aquele funcionário, dividido por dias e mostrando horas extras, faltantes e adicional noturno <br> - Terá o filtro de período a fim de visualizar datas específicas |
+| 03      | 9        | Média          | Como funcionário e gestor, quero realizar pedidos de ajustes de pontos, para que seja ajustado alterações que eu julgo necessárias | 8              | 1          | - Na tela Meus Pontos, haverá a opção Solicitar Ajuste, ao lado do horário correspondente, que abrirá uma tela de edição dos registros. Nela, será possível excluir, adicionar um novo ponto e inserir uma justificativa, que será enviada para aprovação do gestor do setor ou do administrador <br> - Na tela Solicitações, ao criar um novo pedido com o tipo “Ajuste de ponto”, será possível selecionar uma data e um horário já registrado, permitindo definir a alteração desejada. Além do campo obrigatório de justificativa |
+| 03      | 10       | Média          | Como administrador e gestor, quero receber e aprovar pedidos de alteração de ponto, para serem modificados caso necessário | 3              | 1          | - Apenas administradores e gestores recebem pedidos de alteração de ponto <br> - Administradores recebem solicitações de todos, enquanto gestores recebem apenas de seus setores <br> - Na tela de solicitações, aparecerá todas as solicitações enviadas com a indicação “Ajuste de ponto” <br> - Ao escolher o pedido, as opções Aceitar e Recusar estarão disponíveis. O campo de justificativa estará sempre visível, sendo opcional |
+
+
 <span id="links">
 
 # 🔗 Links úteis
 
 - Tags geradas em cada repositório que simbolizam o fim da 1ª sprint:
-  - [Repositório front-end]()
-  - [Repositório back-end]()
-- [Modelo lógico do Banco de Dados](https://drive.google.com/file/d/1sXmtWTzleYs18p3dwqE7RUNxmmhGuBpb/view?usp=sharing)
-- [Backlog da 1°Sprint]()
+  - [Repositório front-end](https://github.com/SkyFlyTeam/BeeOnTime-frontend/releases/tag/v1.0)
+  - [Repositório back-end](https://github.com/SkyFlyTeam/BeeOnTime-backend/releases/tag/v1.0)
 <br>
 
 
