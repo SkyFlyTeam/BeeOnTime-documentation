@@ -3,11 +3,12 @@
 <br>
 
 <p align="center">
-    <a href="#sobre"> Sobre o projeto</a>  |  
-    <a href="#entregas"> Entregas </a> |
-    <a href="#tecnologias">Tecnologias utilizadas </a>  |  
-    <a href="#backlog"> Backlog do produto </a>  |  
-    <a href="#autores"> Equipe </a> 
+    <a href="#sobre"> Sobre o projeto</a> &nbsp |&nbsp &nbsp
+    <a href="#entregas"> Entregas </a> &nbsp |&nbsp &nbsp
+    <a href="#tecnologias"> Tecnologias utilizadas </a> &nbsp |&nbsp &nbsp  
+    <a href="#backlog"> Backlog do produto </a> &nbsp |&nbsp &nbsp
+    <a href="#autores"> Equipe </a> &nbsp |&nbsp &nbsp
+    <a href="#links"> Links Úteis </a> 
 </p>
 
 <span id="sobre">
@@ -25,7 +26,7 @@ O BeeOnTime é um aplicação web moderna e responsiva para o controle de ponto 
 Cada entrega foi realizada a partir da criação de uma **tag** em cada repositório (web, back, nlp...), além da criação de uma branch neste repositório com um relatório completo de tudo o que foi desenvolvido naquela sprint. Observe a relação a seguir:
 | Sprint | Previsão de entrega | Status | Histórico |
 |:--:|:----------:|:-------------------|:-------------------------------------------------:|
-| 01 | 10/03/2025 a 30/03/2025 | ⌛ Em andamento |  |
+| 01 | 10/03/2025 a 30/03/2025 | ✔️ Concluída | [Ver relatório](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/sprint-01/README.md) |
 | 02 | 07/04/2025 a 27/04/2025 | ❌ Aguardando ínicio |  |
 | 03 | 05/05/2025 a 28/05/2025 | ❌ Aguardando ínicio |  |
 
@@ -87,6 +88,15 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 - **Manual do usuário disponível:** Um manual foi criado para orientar o cliente sobre o funcionamento da aplicação.
 
 <br>
+
+<span id="links">
+
+# 🔗 Links úteis
+
+- [Modelo lógico do Banco de Dados](https://drive.google.com/file/d/1sXmtWTzleYs18p3dwqE7RUNxmmhGuBpb/view?usp=sharing)
+- [Backlog da 1°Sprint]()
+<br>
+
 
 <span id="autores">
 
