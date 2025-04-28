@@ -31,7 +31,7 @@ Cada entrega foi realizada a partir da criação de uma **tag** em cada reposit�
 | Sprint | Previsão de entrega | Status | Histórico |
 |:--:|:----------:|:-------------------|:-------------------------------------------------:|
 | 01 | 10/03/2025 a 30/03/2025 | ✔️ Concluída | [Ver relatório](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/sprint-01/README.md) |
-| 02 | 07/04/2025 a 27/04/2025 | ❌ Aguardando ínicio |  |
+| 02 | 07/04/2025 a 27/04/2025 | ✔️ Concluída | [Ver relatório](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/sprint-02/README.md) |
 | 03 | 05/05/2025 a 28/05/2025 | ❌ Aguardando ínicio |  |
 
 <br />
@@ -96,11 +96,9 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 <span id="links">
 
 # 🔗 Links úteis
-- [Backlog da 1°Sprint](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/2ac530603592cfca96fab6b2286086dd389601e6/Documenta%C3%A7%C3%B5es/Backlog%201%C2%B0%20Sprint.pdf)
-- [Modelo lógico do Banco de Dados](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/2ac530603592cfca96fab6b2286086dd389601e6/Documenta%C3%A7%C3%B5es/Modelo%20l%C3%B3gico%20do%20Banco%20de%20Dados.svg)
-- [Fluxo de trabalho no Github](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/2ac530603592cfca96fab6b2286086dd389601e6/Documenta%C3%A7%C3%B5es/Fluxo%20de%20Trabalho%20no%20GitHub.pdf)
-- [Regras de Permanência no Grupo SkyFly](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/2ac530603592cfca96fab6b2286086dd389601e6/Documenta%C3%A7%C3%B5es/Regras%20de%20Perman%C3%AAncia%20no%20Grupo.pdf)
-- [DoR e DoD](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/2ac530603592cfca96fab6b2286086dd389601e6/Documenta%C3%A7%C3%B5es/DoR%20e%20DoD.pdf)
+- [Modelo lógico do Banco de Dados](https://drive.google.com/file/d/1sXmtWTzleYs18p3dwqE7RUNxmmhGuBpb/view?usp=sharing)
+- [Fluxo de trabalho no Github](https://docs.google.com/document/d/1--gb6dtHlzOspRU4Nv-64WNuLzqlcb0xBifa46g9uhI/edit?usp=sharing)
+- [Proposta de solução](https://docs.google.com/document/d/1lznREl-upynOUN2t59BX64SJIDIOX4QHkgP3DCEIDB8/edit?usp=sharing)
 <br>
 
 
