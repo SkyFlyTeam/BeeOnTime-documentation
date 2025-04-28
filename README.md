@@ -1,4 +1,4 @@
-![1° Sprint](https://github.com/user-attachments/assets/046b1b08-9234-4650-8107-80ab3cec102c)
+![2° Sprint](https://github.com/user-attachments/assets/358d1391-4dcc-4a46-8219-8a2a84d925ae)
 
 <br>
 
@@ -10,52 +10,64 @@
     <a href="#links"> Links úteis </a>
 </p>
 
-No início do desenvolvimento da aplicação de controle de ponto eletrônico, a primeira sprint focou no MVP (Produto Mínimo Viável), priorizando as funcionalidades mais essenciais. A equipe concentrou seus esforços na marcação de ponto, que é a base do sistema. Entre as funcionalidades desenvolvidas, destacam-se o cadastro da empresa e setores, cadastro de colaboradores e jornadas, registro de ponto, histórico de pontos, solicitações de ajustes de ponto e cálculo automático de horas extras.
+Nesta sprint, nosso foco principal foi o desenvolvimento de lógicas de backend e funcionalidades de frontend, voltadas para as solicitações de funcionários e gestores aos administradores. Agora, além de solicitar ajustes de ponto, os usuários também podem solicitar folgas, férias, horas extras, licença médica e justificar ausências. Implementamos ainda a visualização do banco de horas individual, permitindo o acompanhamento do histórico de compensações. Por fim, desenvolvemos as telas de edição de dados de perfil e dos funcionários.
 
 <span id="objetivos">
 
 # 🎯 Objetivos da Sprint
 Os requisitos funcionais atendidos nesta sprint foram:
 
-- ✔️ **RFN 01. Cadastro de Empresas:** <br /> O sistema permite cadastrar uma empresa juntamente com os setores que a compõem. <br /> <br /> 
-- ✔️ **RFN 02. Cadastro de Colaboradores:** <br />  O sistema permite cadastrar funcionários com diferentes níveis de permissão, vinculando-os à sua jornada de trabalho no momento do cadastro. <br /> <br /> 
-- ✔️ **RFN 03. egistro e Ajustes no Ponto:** <br />  O sistema permite registrar os horários de entrada, saída e intervalos dos funcionários, mantendo um histórico acessível ao colaborador. O sistema também permite realizar solicitações de ajustes de ponto. <br /> <br /> 
-- ✔️ **RFN 04. Horas Extras e Banco de Horas:** <br />  O sistema tem o registro automático das horas extras realizadas pelo colaborador. <br /> <br /> 
+- ✔️ **RFN02. Cadastro de Colaboradores** <br /> O sistema permite cadastrar funcionários com diferentes níveis de permissão, vinculando-os à sua jornada de trabalho no momento do cadastro. <br /> <br /> 
+- ✔️ **RFN04. Horas Extras e Banco de Horas:** <br />  O sistema permite a solicitação antecipada de horas extras ou o registro automático, sujeitos à aprovação do administrador, que define se serão pagas ou convertidas para o banco de horas.
+ <br /> <br /> 
+- ✔️ **RFN05. Justificativas de Ausências:** <br />  O sistema permite que funcionários registrem ausências, anexando justificativas e informando os dias de afastamento. O RH recebe e confirma o recebimento da solicitação.
+ <br /> <br /> 
+- ✔️ **RFN06. Controle de Férias e Folgas:** <br />  O sistema permite o agendamento de férias e folgas pelos administradores e também permite solicitações pelos funcionários. Após a aprovação, o sistema registra automaticamente a ausência no calendário da empresa. <br /> <br />
 
 <br> 
 
 <span id="entregas">
 
 # 📲 Entregas
-Durante esta sprint, o time entregou artefatos SCRUM validados, como o Backlog do Produto, o Backlog das Sprints e as User Stories, com a participação direta do P.O. e comunicação constante com o cliente. Para entender e alinhar as expectativas do cliente, foi criado um protótipo inicial no Figma, que ajudou a definir a identidade visual e o design do sistema. Esse protótipo foi validado com o cliente e traduzido em uma aplicação React, integrando as funcionalidades acordadas para esta sprint.
 
-### RF 01: Cadastro da Empresa
-O cadastro da empresa ocorre no ínicio, com o preenchimento de informações essenciais como nome, razão social, CNPJ e CEP, o que permite preencher automaticamente o endereço da empresa. No segundo passo, é possível cadastrar todos os setores da empresa, estruturando a organização hierárquica.
+### RFN02. Cadastro de Colaboradores
+O módulo de cadastro de colaboradores foi finalizado nesta sprint.
+Agora, além do cadastro inicial da empresa, as telas de edição de perfil, edição de dados dos colaboradores e configuração da jornada de trabalho estão totalmente desenvolvidas, concluindo assim o requisito de cadastros.
 
-### RF 02: Cadastro de Colaboradores
-O sistema permite o cadastro de novos colaboradores, onde cada um recebe um e-mail de primeiro acesso após a conclusão do cadastro. As informações incluem nome, CPF, e-mail, data de nascimento, código de registro, tipo de contrato (CLT ou Estágio), data de contratação, cargo, nível de acesso e o setor ao qual o colaborador pertence.
+### RFN04. Horas Extras e Banco de Horas:
+O controle de horas foi ampliado e aprimorado.
+Além da contabilização automática das horas extras, o sistema agora permite a solicitação prévia de realização de horas extras em dias planejados, com envio de justificativa.
+A tela de Banco de Horas também foi finalizada, apresentando as seguintes informações:
+- Total de horas trabalhadas
+- Horas descontadas
+- Horas abonadas
+- Horas extras pagas
+- Saldo acumulado
 
-No segundo passo, a jornada de trabalho do colaborador pode ser configurada, especificando carga horária e dias trabalhados. Caso a jornada seja flexível, não é necessário definir os horários de entrada, saída e almoço, mas, caso contrário, essas informações devem ser detalhadas.
+### RFN05. Justificativas de Ausências:
+O sistema de justificativas foi implementado conforme a regra de negócio.
+Agora, é possível:
+- Enviar justificativas de ausência dentro do prazo de 48 horas após a falta.
+- Solicitar afastamento para períodos futuros, como em casos de afastamento médico, com o envio da justificativa.
 
-### RF 03: Registro e Ajustes no Ponto
-Funcionários e gestores podem registrar os pontos de trabalho ao longo do dia, incluindo horários de entrada, início de almoço, fim de almoço e saída. Caso ocorra algum erro ou esquecimento ao bater o ponto, é possível solicitar um ajuste, acompanhado de uma justificativa. Gestores ou administradores têm a capacidade de aprovar ou rejeitar essas solicitações de ajuste. Se o ajuste for aceito, o ponto é alterado automaticamente. Caso contrário, o gestor pode enviar uma devolutiva explicando a recusa.
-
-### RF 04: Horas Extras e Banco de Horas
-As horas extras são automaticamente calculadas pelo sistema. Na tela de "Meus Pontos", o colaborador pode visualizar a quantidade de horas trabalhadas, incluindo horas extras. O sistema também registra todos os pontos batidos, garantindo transparência e controle sobre o tempo trabalhado, além de facilitar a gestão de horas extras e banco de horas.
+### RFN06. Controle de Férias e Folgas:
+O sistema de solicitações de férias e folgas foi finalizado.
+Entre as funcionalidades entregues:
+- Solicitação de folgas utilizando o banco de horas ou com desconto de horas.
+- Marcação de datas para folgas, com necessidade de aprovação do gestor/administrador.
+- Solicitação de férias nos formatos permitidos (30 dias, 15 + 15 dias, 20 + 10 dias ou 10 + 15 + 5 dias), também com aprovação requerida.
 
 <br />
 
 <span id="metricas">
 
 # 📈 Métricas do Time
-A sprint foi composta por 9 user stories e 27 subtasks. Embora o gráfico de burndown mostre que o trabalho foi concentrado no final, a realidade é que o time começou a trabalhar antes da sprint, realizando atividades como a criação do mockup, definição de DoR e DoD, elaboração do Backlog da Sprint, e configuração das branches de backend e frontend.
-
-O gráfico de burndown mostra a evolução do trabalho ao longo da sprint. A linha horizontal representa o tempo, ou seja, as datas da sprint, enquanto a linha vertical indica os pontos de história que representam o esforço total planejado para a sprint. A linha cinza mostra a taxa de progresso ideal, indicando como o trabalho deveria ser realizado de maneira constante ao longo dos dias. Já a linha vermelha indica o trabalho realizado, que no gráfico reflete a conclusão das User Stories 100% finalizadas. O pico no gráfico ocorre quando as User Stories são concluídas, explicando a aparente concentração de trabalho no final da sprint. Na prática, a maior parte das subtasks já estava concluída antes das últimas entregas.
+A sprint foi composta por 22 user stories e 37 subtasks. O gráfico de burndown mostra a evolução do trabalho ao longo da sprint. A linha horizontal representa o tempo, ou seja, as datas da sprint, enquanto a linha vertical indica os pontos de história que representam o esforço total planejado para a sprint. A linha cinza mostra a taxa de progresso ideal, indicando como o trabalho deveria ser realizado de maneira constante ao longo dos dias. Já a linha vermelha indica o trabalho realizado, que no gráfico reflete a conclusão das User Stories 100% finalizadas. O pico no gráfico ocorre quando as User Stories são concluídas.
 
 <br />
-    
+
 <div align="center">
-<img src="https://github.com/user-attachments/assets/d1f6e4c8-addd-42d2-b012-2d50f9801472" alt="Gráfico Burndown" />
+<img src="https://github.com/user-attachments/assets/9f422ddd-e622-474c-9295-66ae4ad78cdd" alt="Gráfico Burndown" />
 </div>
 
 <br>
@@ -66,25 +78,25 @@ O gráfico de burndown mostra a evolução do trabalho ao longo da sprint. A lin
 
 | **RFN** | **Rank** | **Prioridade** | **User Story** | **Estimativa** | **Sprint** | **Critérios de Aceitação** |
 |---------|----------|----------------|----------------|----------------|------------|---------------------------|
-| 01      | 1        | Alta           | Como administrador, quero cadastrar minha empresa, para configurar minhas informações e começar a gerenciar os pontos e colaboradores | 3              | 1          | - Na tela de Login, ao clicar no botão "É novo aqui? Cadastre sua empresa!", o usuário será direcionado para a tela de cadastro da empresa. <br> - A tela de cadastro deve conter os campos obrigatórios: Nome, Razão Social, CNPJ e CEP. <br> - Os campos CNPJ e CEP devem possuir máscaras de formatação. <br> - Não deve permitir o registro duas empresas com o mesmo CNPJ <br> - Após preencher os campos e salvar o cadastro, o usuário será redirecionado para a tela de definição de setores da empresa |
-| 02      | 2        | Alta           | Como administrador, quero cadastrar e gerenciar os setores da minha empresa para organizar as equipes de trabalho | 3              | 1          | - Após preencher as informações da empresa, o usuário será redirecionado para a tela de cadastro de setores <br> - Ao digitar o nome no campo e clicar no botão "+", um novo setor poderá ser adicionado <br> - Todos os setores cadastrados serão listados abaixo do formulário de inserção <br> - O sistema não permitirá o cadastro de setores com nomes duplicados. <br> - O sistema não permitirá a adição de setores com nome vazio |
-| 02      | 3        | Alta           | Como administrador, quero que meus cadastros tenham diferentes níveis de acesso, para garantir que cada usuário tenha permissões específicas conforme sua função | 21             | 1          | - O sistema deve permitir os níveis de acesso de administrador, gestor e funcionário <br> - O sistema deve bloquear usuários sem permissão de executar ações não autorizadas <br> - Apenas administradores podem alterar o nível de acesso do colaborador |
-| 02      | 4        | Alta           | Como administrador, quero registrar meus colaboradores com seus dados, para fazer o gerenciamento de suas informações e atividades dentro do sistema | 21             | 1          | - Apenas administradores podem registrar novos colaboradores <br> - O cadastro terá os campos de nome completo, data de nascimento, CPF, e-mail, número de registro, setor, data de admissão <br> - Os campos de data de nascimento, CPF, e-mail e data de admissão deverão ter máscaras de formatação <br> - O sistema não deve permitir duas contas com o mesmo CPF ou e-mail |
-| 02      | 5        | Média          | Como administrador, quero definir a jornada de trabalho, para que possa garantir o cumprimento das obrigações horários dos colaboradores | 5              | 1          | - Apenas administradores podem definir ou editar a jornada de trabalho dos colaboradores <br> - A definição da jornada trará os campos de horários de Entrada, Saída, Carga Horária e Dia da Semana <br> - Os horários de Entrada e Saída só serão mostrados se a opção for “Não” no campo de Horário Flexível? <br> - Todos os campos de horário deverão ter máscaras de formatação <br> - O Horário de Saída deve sempre ser maior que o Horário de Entrada, evitando registros inválidos |
-| 03      | 6        | Alta           | Como funcionário e gestor, quero registrar meus horários de entrada, saída e tempo de almoço, para que minha jornada de trabalho seja contabilizada corretamente | 8              | 1          | - Todos os níveis de acesso, exceto o administrador da empresa, registram ponto <br> - Na tela de início, serão exibidos apenas dois botões por vez, alternando conforme o status: Entrada ➙ Saída, Ida Almoço ➙ Volta Almoço <br> - Cada status pode ser acionado apenas uma vez por dia, ficando bloqueado após o uso. <br> - Na mesma tela, serão exibidos os parâmetros de horas trabalhadas diárias e mensais, incluindo informações sobre horas extras |
-| 04      | 7        | Alta           | Como funcionário e gestor, quero que minhas horas extras sejam automaticamente contabilizadas, para garantir o controle das horas trabalhadas a mais | 8              | 1          | - O sistema deverá automaticamente contabilizar as horas extras quando o tempo trabalhado passar da carga horária definida para aquele usuário <br> - Deverá ser indicado as horas diárias automáticas na tela inicial em “Carga diária” <br> - Deverá acumular as horas extras no card da tela inicial que indica o Banco de Horas do usuário |
-| 03      | 8        | Média          | Como funcionário e gestor, quero acessar meu histórico de pontos, para poder acompanhar e ter controle detalhado das horas trabalhadas | 3              | 1          | - Na tela de Meus pontos, será exibido todo o histórico de pontos marcado por aquele funcionário, dividido por dias e mostrando horas extras, faltantes e adicional noturno <br> - Terá o filtro de período a fim de visualizar datas específicas |
-| 03      | 9        | Média          | Como funcionário e gestor, quero realizar pedidos de ajustes de pontos, para que seja ajustado alterações que eu julgo necessárias | 8              | 1          | - Na tela Meus Pontos, haverá a opção Solicitar Ajuste, ao lado do horário correspondente, que abrirá uma tela de edição dos registros. Nela, será possível excluir, adicionar um novo ponto e inserir uma justificativa, que será enviada para aprovação do gestor do setor ou do administrador <br> - Na tela Solicitações, ao criar um novo pedido com o tipo “Ajuste de ponto”, será possível selecionar uma data e um horário já registrado, permitindo definir a alteração desejada. Além do campo obrigatório de justificativa |
-| 03      | 10       | Média          | Como administrador e gestor, quero receber e aprovar pedidos de alteração de ponto, para serem modificados caso necessário | 3              | 1          | - Apenas administradores e gestores recebem pedidos de alteração de ponto <br> - Administradores recebem solicitações de todos, enquanto gestores recebem apenas de seus setores <br> - Na tela de solicitações, aparecerá todas as solicitações enviadas com a indicação “Ajuste de ponto” <br> - Ao escolher o pedido, as opções Aceitar e Recusar estarão disponíveis. O campo de justificativa estará sempre visível, sendo opcional |
+| 02      | 11        | Média           | Como administrador, quero editar as informações e a jornada dos usuários para mantê-las atualizadas | 2              | 2          | Editar **Colaborador:**<br>-Apenas administrador pode editar usuário e jornada.<br>-Nome: somente letras.<br>-CPF: deve ter máscara e não permitir duplicidade.<br>-E-mail: deve ser válido e único.<br>-Data de nascimento: ano com até 4 dígitos.<br>-Número de registro: somente números e não duplicado.<br>-Caso o nível de acesso seja Admin ou Gestor o Tipo de Contrato fica como CLT, caso seja funcionário, pode ser CLT ou Estagiário.<br>-Não permitir salvar com campos obrigatórios vazios. Exibir erro de campo obrigatório.<br>-Toggle no botão de status.<br>-Botão de salvar só aparece após alteração.<br>-Exibir um toast de confirmação de alteração.<br>-A tela precisa ser responsiva.<br>-Adicionar Skeleton<br><br>**Editar Jornada:**<br>-Se horário flexível for "Sim", campos de entrada e saída desaparecem; se "Não", ambos são obrigatórios.<br>-Horário de saída não pode ser antes do de entrada.<br>-Pelo menos um dia da semana deve ser selecionado.<br>-Não permitir salvar com campos obrigatórios vazios. Exibir erro de campo obrigatório.<br>-Botão de salvar só aparece após edição de campo.<br>-Exibir um toast de confirmação de alteração.<br>-A tela precisa ser responsiva.<br>-Adicionar Skeleton <br> |
+| 02      | 12        | Média           | Como administrador, gestor ou funcionário, quero poder editar minhas informações de cadastro para manter meus dados atualizados | 2              | 2          | -Todos os níveis de acesso podem editar seu próprio perfil.<br>- Nome: somente letras.<br>- E-mail: válido e único.<br>- Nível de acesso, Cargo, Departamento e Tipo de contrato: inalteráveis<br>- Senha: altera ao salvar.<br>- Botão de salvar aparece somente após edição.<br>- Após a alteração exibir uma mensagem de confirmação<br>- A tela precisa ser responsiva.<br> |
+| 04      | 13        | Baixa           | Como funcionário e gestor, gostaria de poder escolher entre as diferentes opções ao fazer a solicitação, para garantir que minha solicitação seja feita corretamente | 3             | 2          | - O botão deverá ser criado como componente<br>- Deverá ter as opções de Férias, Folga, Hora extra, Ajuste de ponto e Licença médica<br>- Precisa ser responsivo.<br> |
+| 02      | 14        | Baixa           | Como gestor, gostaria que na minha tela de solicitações fosse dividida entre as análises dos funcionários a fazer e meus pedidos, para facilitar a visualização e o gerenciamento das tarefas | 2             | 2          | -A listagem será dividida entre "Análises" e "Meus Pontos":<br> -Análises: exibe as solicitações dos funcionários do setor.<br> - Meus Pontos: exibe as solicitações feitas pelo gestor.<br>- A ordem de listagem será:<br> -Mais recente para o mais antigo para novas solicitações.<br>- Mais recente para o mais antigo para solicitações já analisadas.<br>- A tela precisa ser responsiva.<br> |
+|05|15| Alta |||||
+||||||||
+||||||||
+||||||||
+||||||||
+||||||||
 
 
 <span id="links">
 
 # 🔗 Links úteis
 
-- Tags geradas em cada repositório que simbolizam o fim da 1ª sprint:
-  - [Repositório front-end](https://github.com/SkyFlyTeam/BeeOnTime-frontend/releases/tag/v1.0)
-  - [Repositório back-end](https://github.com/SkyFlyTeam/BeeOnTime-backend/releases/tag/v1.0)
+- Tags geradas em cada repositório que simbolizam o fim da 2ª sprint:
+  - [Repositório front-end](https://github.com/SkyFlyTeam/BeeOnTime-frontend/releases/tag/v2.0)
+  - [Repositório back-end](https://github.com/SkyFlyTeam/BeeOnTime-backend/releases/tag/v2.0)
 <br>
 
 
