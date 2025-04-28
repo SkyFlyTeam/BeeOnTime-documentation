@@ -1,0 +1,7 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/SkyFlyTeam/BeeOnTime-frontend.git
+    
+[submodule "backend"]
+	path = backend
+	url = https://github.com/SkyFlyTeam/BeeOnTime-backend.git
