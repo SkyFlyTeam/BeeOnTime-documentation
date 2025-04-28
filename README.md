@@ -74,22 +74,6 @@ A sprint foi composta por 22 user stories e 37 subtasks. O gráfico de burndown 
 
 <span id="backlog">
 
-# 📃 Backlog da Sprint
-
-| **RFN** | **Rank** | **Prioridade** | **User Story** | **Estimativa** | **Sprint** | **Critérios de Aceitação** |
-|---------|----------|----------------|----------------|----------------|------------|---------------------------|
-| 02      | 11        | Média           | Como administrador, quero editar as informações e a jornada dos usuários para mantê-las atualizadas | 2              | 2          | Editar **Colaborador:**<br>-Apenas administrador pode editar usuário e jornada.<br>-Nome: somente letras.<br>-CPF: deve ter máscara e não permitir duplicidade.<br>-E-mail: deve ser válido e único.<br>-Data de nascimento: ano com até 4 dígitos.<br>-Número de registro: somente números e não duplicado.<br>-Caso o nível de acesso seja Admin ou Gestor o Tipo de Contrato fica como CLT, caso seja funcionário, pode ser CLT ou Estagiário.<br>-Não permitir salvar com campos obrigatórios vazios. Exibir erro de campo obrigatório.<br>-Toggle no botão de status.<br>-Botão de salvar só aparece após alteração.<br>-Exibir um toast de confirmação de alteração.<br>-A tela precisa ser responsiva.<br>-Adicionar Skeleton<br><br>**Editar Jornada:**<br>-Se horário flexível for "Sim", campos de entrada e saída desaparecem; se "Não", ambos são obrigatórios.<br>-Horário de saída não pode ser antes do de entrada.<br>-Pelo menos um dia da semana deve ser selecionado.<br>-Não permitir salvar com campos obrigatórios vazios. Exibir erro de campo obrigatório.<br>-Botão de salvar só aparece após edição de campo.<br>-Exibir um toast de confirmação de alteração.<br>-A tela precisa ser responsiva.<br>-Adicionar Skeleton <br> |
-| 02      | 12        | Média           | Como administrador, gestor ou funcionário, quero poder editar minhas informações de cadastro para manter meus dados atualizados | 2              | 2          | -Todos os níveis de acesso podem editar seu próprio perfil.<br>- Nome: somente letras.<br>- E-mail: válido e único.<br>- Nível de acesso, Cargo, Departamento e Tipo de contrato: inalteráveis<br>- Senha: altera ao salvar.<br>- Botão de salvar aparece somente após edição.<br>- Após a alteração exibir uma mensagem de confirmação<br>- A tela precisa ser responsiva.<br> |
-| 04      | 13        | Baixa           | Como funcionário e gestor, gostaria de poder escolher entre as diferentes opções ao fazer a solicitação, para garantir que minha solicitação seja feita corretamente | 3             | 2          | - O botão deverá ser criado como componente<br>- Deverá ter as opções de Férias, Folga, Hora extra, Ajuste de ponto e Licença médica<br>- Precisa ser responsivo.<br> |
-| 02      | 14        | Baixa           | Como gestor, gostaria que na minha tela de solicitações fosse dividida entre as análises dos funcionários a fazer e meus pedidos, para facilitar a visualização e o gerenciamento das tarefas | 2             | 2          | -A listagem será dividida entre "Análises" e "Meus Pontos":<br> -Análises: exibe as solicitações dos funcionários do setor.<br> - Meus Pontos: exibe as solicitações feitas pelo gestor.<br>- A ordem de listagem será:<br> -Mais recente para o mais antigo para novas solicitações.<br>- Mais recente para o mais antigo para solicitações já analisadas.<br>- A tela precisa ser responsiva.<br> |
-|05|15| Alta |||||
-||||||||
-||||||||
-||||||||
-||||||||
-||||||||
-
-
 <span id="links">
 
 # 🔗 Links úteis
