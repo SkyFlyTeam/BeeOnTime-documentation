@@ -22,7 +22,6 @@ Os requisitos funcionais atendidos nesta sprint foram:
  <br /> <br /> 
 - ✔️ **RFN05. Justificativas de Ausências:** <br />  O sistema permite que funcionários registrem ausências, anexando justificativas e informando os dias de afastamento. O RH recebe e confirma o recebimento da solicitação.
  <br /> <br /> 
-- ✔️ **RFN06. Controle de Férias e Folgas:** <br />  O sistema permite o agendamento de férias e folgas pelos administradores e também permite solicitações pelos funcionários. Após a aprovação, o sistema registra automaticamente a ausência no calendário da empresa. <br /> <br />
 
 <br> 
 
@@ -49,13 +48,6 @@ O sistema de justificativas foi implementado conforme a regra de negócio.
 Agora, é possível:
 - Enviar justificativas de ausência dentro do prazo de 48 horas após a falta.
 - Solicitar afastamento para períodos futuros, como em casos de afastamento médico, com o envio da justificativa.
-
-### RFN06. Controle de Férias e Folgas:
-O sistema de solicitações de férias e folgas foi finalizado.
-Entre as funcionalidades entregues:
-- Solicitação de folgas utilizando o banco de horas ou com desconto de horas.
-- Marcação de datas para folgas, com necessidade de aprovação do gestor/administrador.
-- Solicitação de férias nos formatos permitidos (30 dias, 15 + 15 dias, 20 + 10 dias ou 10 + 15 + 5 dias), também com aprovação requerida.
 
 <br />
 
