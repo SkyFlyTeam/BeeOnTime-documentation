@@ -61,10 +61,9 @@ As seguintes ferramentas, linguagens, bibliotecas e tecnologias foram usadas na 
 
 # 🎯 Backlog do Produto
 
+![Backlog do Produto](https://github.com/user-attachments/assets/9bd2fcd9-81d8-49c0-995a-0f4e5bb5639b)
 
-![Frame 18](https://github.com/user-attachments/assets/55e5f8d5-7879-43e7-a328-b8ef0af93047)
-
-![Backlog Sprint (2)](https://github.com/user-attachments/assets/5cba9695-842c-4dc4-8bbf-4434a6185098)
+![Backlog Sprint](https://github.com/user-attachments/assets/64005097-d228-4e7d-ad2a-d7fc3dbb717a)
 
 <br>
 
