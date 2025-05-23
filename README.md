@@ -32,7 +32,7 @@ Cada entrega foi realizada a partir da criação de uma **tag** em cada reposit�
 |:--:|:----------:|:-------------------|:-------------------------------------------------:|
 | 01 | 10/03/2025 a 30/03/2025 | ✔️ Concluída | [Ver relatório](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/sprint-01/README.md) |
 | 02 | 07/04/2025 a 27/04/2025 | ✔️ Concluída | [Ver relatório](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/sprint-02/README.md) |
-| 03 | 05/05/2025 a 28/05/2025 | ❌ Aguardando ínicio |  |
+| 03 | 05/05/2025 a 28/05/2025 | ✔️ Concluída |  [Ver relatório](https://github.com/SkyFlyTeam/BeeOnTime-documentation/blob/sprint-03/README.md)|
 
 <br />
 
