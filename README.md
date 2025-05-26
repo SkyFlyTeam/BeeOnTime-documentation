@@ -79,9 +79,9 @@ Os critérios de filtragem variam de acordo com cada tela, incluindo opções co
 A sprint foi composta por 29 user stories e 43 subtasks.O gráfico de burndown mostra a evolução do trabalho ao longo da sprint. A linha horizontal representa o tempo, ou seja, as datas da sprint, enquanto a linha vertical indica os pontos de história que representam o esforço total planejado para a sprint. A linha cinza mostra a taxa de progresso ideal, indicando como o trabalho deveria ser realizado de maneira constante ao longo dos dias. Já a linha vermelha indica o trabalho realizado, que no gráfico reflete a conclusão das User Stories 100% finalizadas. O pico no gráfico ocorre quando as User Stories são concluídas.
 
 <br />
-    
+
 <div align="center">
-<img src="" alt="Gráfico Burndown" />
+<img src="https://github.com/user-attachments/assets/ecdae02f-cadc-441b-ab7f-97312e4ffad9" alt="Gráfico Burndown" />
 </div>
 
 <br>
